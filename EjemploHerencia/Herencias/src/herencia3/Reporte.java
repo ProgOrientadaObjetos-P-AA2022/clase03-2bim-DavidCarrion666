@@ -14,13 +14,13 @@ public class Reporte {
     protected String nombre;
     protected String carrera;
     protected String ciclo;
-    
-    public Reporte(String n, String c, String cic){
+
+    public Reporte(String n, String c, String cic) {
         nombre = n;
         carrera = c;
         ciclo = cic;
     }
-    
+
     public void establecerNombre(String n) {
         nombre = n;
     }
@@ -43,6 +43,13 @@ public class Reporte {
 
     public String obtenerCiclo() {
         return ciclo;
+    }
+
+    @Override
+    public String toString() {
+
+        return nombre;
+
     }
 
 }
